@@ -3,7 +3,7 @@ import org.codehaus.groovy.grails.validation.ConstrainedProperty
 import org.grails.plugins.sanitizer.MarkupConstraint
 
 class SanitizerGrailsPlugin {
-	def version = "0.9.1"
+	def version = "0.9.2"
 	def grailsVersion = "2.0.0 > *"
 
 	def author = "Daniel Bower"
@@ -34,6 +34,7 @@ It simply validates whether the string contains 'safe' html.  If it does not con
 valid markup, it will simply return an empty string.
 '''
 
+    def groupId="myPlugins"
 	def documentation = "http://grails.org/plugin/sanitizer"
 
 	def doWithApplicationContext = { applicationContext ->
